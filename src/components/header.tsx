@@ -1,0 +1,120 @@
+import Logo from "../../src/assets/logo-maeztra.svg";
+import UserIcon from "../assets/icon-user.svg";
+import WishlistIcon from "../assets/icon-heart.svg";
+import CartIcon from "../assets/icon-shoppingbag.svg";
+import DressIcon from "../assets/icon-dress.svg";
+
+export default function Header() {
+  return (
+    <header>
+      <div className="flex bg-lightBlack justify-center">
+        <p className="text-xs/[18px] text-slate-200">
+          Acompanhe as melhores promoções disponíveis aqui na Maeztra.
+        </p>
+      </div>
+      <div className="shadow-header">
+        <div className="max-w-[1598px] mx-auto flex items-center justify-between py-5">
+          <img src={Logo} alt="Maeztra" />
+          <div className="flex bg-grey min-w-[500px] max-w-[791px] h-10 pl-6 rounded-[10px] overflow: hidden;">
+            <input
+              className="bg-grey w-3/4 placeholder:text-xs/[18px] placeholder:text-lightBlack"
+              type="text"
+              placeholder="O que você busca ?"
+            />
+            <button
+              className="bg-yellow w-[119px] rounded-[10px] text-sm/[21px] text-white"
+              type="button"
+            >
+              Buscar
+            </button>
+          </div>
+          <nav className="flex ">
+            <a
+              className="flex gap-2 items-center text-sm/[21px] text-lightBlack"
+              href="#"
+            >
+              <img src={UserIcon} className="max-h-4" />{" "}
+              <span>Minha Conta</span>
+            </a>
+            <a
+              className="flex gap-2 ml-10 items-center text-sm/[21px] text-lightBlack"
+              href="#"
+            >
+              <img src={WishlistIcon} className="max-h-4" />{" "}
+              <span>Favoritos</span>
+            </a>
+            <a
+              className="flex items-center gap-2 ml-12 text-sm/[21px] text-lightBlack border border-yellow rounded-lg pt-3 pr-[14px] pb-[13px] pl-[17px]"
+              href="#"
+            >
+              <img src={CartIcon} className="max-h-4" />{" "}
+              <span>Meu Carrinho</span>
+            </a>
+          </nav>
+        </div>
+      </div>
+      <div>
+        <nav className="">
+          <ul className="flex justify-between max-w-[1034px] w-full mx-auto my-[10px] text-sm/[21px] text-lightBlack">
+            <li className="group">
+              <a href="#" className="flex gap-2">
+                <img src={DressIcon} alt="Novidades" />
+                <span className="group-hover:text-yellow group-hover:font-bold">
+                  Novidades
+                </span>
+              </a>
+            </li>
+            <li className="group">
+              <a
+                href="#"
+                className="group-hover:text-yellow group-hover:font-bold"
+              >
+                Vestidos
+              </a>
+            </li>
+            <li className="group">
+              <a
+                href="#"
+                className="group-hover:text-yellow group-hover:font-bold"
+              >
+                Roupas
+              </a>
+            </li>
+            <li className="group">
+              <a
+                href="#"
+                className="group-hover:text-yellow group-hover:font-bold"
+              >
+                Sapatos
+              </a>
+            </li>
+            <li className="group">
+              <a
+                href="#"
+                className="group-hover:text-yellow group-hover:font-bold"
+              >
+                Lingerie
+              </a>
+            </li>
+            <li className="group">
+              <a
+                href="#"
+                className="group-hover:text-yellow group-hover:font-bold"
+              >
+                Acessórios
+              </a>
+            </li>
+            <li className="group">
+              <a
+                href="#"
+                className="group-hover:text-yellow group-hover:font-bold"
+              >
+                OUTLET
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  );
+}
