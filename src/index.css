@@ -1,3 +1,46 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+// Slider style
+
+.swiper-button-next,
+.swiper-button-prev {
+  margin-top: -30px;
+}
+
+.swiper-button-next::after {
+  content: "";
+  background: url("./src/assets/icon-next.svg") no-repeat;
+  width: 19.42px;
+  height: 32px;
+}
+
+.swiper-button-prev::after {
+  content: "";
+  background: url("./src/assets/icon-prev.svg") no-repeat;
+  width: 19.42px;
+  height: 32px;
+}
+
+.swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 24px;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  width: 16px;
+  height: 16px;
+  background: transparent;
+  border: 2px solid #faa500;
+  opacity: 1 !important;
+  margin: 0 8px;
+}
+
+.swiper-pagination-bullet-active {
+  background: #faa500 !important;
+}
