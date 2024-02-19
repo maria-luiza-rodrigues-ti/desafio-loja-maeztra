@@ -4,6 +4,7 @@ import Offers from "./components/offers";
 import Brands from "./components/brands";
 import Shelf from "./components/shelf";
 import Infocard from "./components/infocard";
+import Newsletter from "./components/newsletter";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Brands />
       <Shelf />
       <Infocard />
+      <Newsletter />
     </>
   );
 }

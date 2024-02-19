@@ -1,6 +1,6 @@
 export default function Infocard() {
   return (
-    <section className="flex justify-center items-center gap-16 max-w-[1600px] w-full mx-auto mt-[80px]">
+    <section className="flex justify-center items-center gap-16 max-w-[1600px] w-full mx-auto my-[80px]">
       <div>
         <h3 className="text-black text-2xl font-bold mb-4">Lorem ipsum </h3>
         <p className="text-black text-sm">

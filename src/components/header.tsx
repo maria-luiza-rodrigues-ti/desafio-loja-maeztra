@@ -15,7 +15,7 @@ export default function Header() {
       <div className="shadow-header">
         <div className="max-w-[1598px] mx-auto flex items-center justify-between py-5">
           <img src={Logo} alt="Maeztra" />
-          <div className="flex bg-grey min-w-[500px] max-w-[791px] h-10 pl-6 rounded-[10px] overflow: hidden;">
+          <div className="flex justify-between bg-grey w-full min-w-[500px] max-w-[791px] h-10 pl-6 rounded-[10px] overflow: hidden;">
             <input
               className="bg-grey w-3/4 placeholder:text-xs/[18px] placeholder:text-lightBlack"
               type="text"
