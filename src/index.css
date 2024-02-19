@@ -55,3 +55,11 @@
 .swiper-pagination-bullet-active {
   background: #faa500 !important;
 }
+
+.group .swiper-button-prev {
+  left: 0;
+}
+
+.group .swiper-button-next {
+  right: 0;
+}

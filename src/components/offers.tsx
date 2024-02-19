@@ -17,7 +17,6 @@ export default function Offers() {
       <Swiper
         slidesPerView={5}
         spaceBetween={15}
-        loop={true}
         className="flex justify-between max-w-[1600px] w-full gap-[15px] mt-[21px]"
       >
         {offers.map((offer, index) => (
