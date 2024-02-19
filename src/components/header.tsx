@@ -7,11 +7,6 @@ import DressIcon from "../assets/icon-dress.svg";
 export default function Header() {
   return (
     <header>
-      <div className="flex bg-lightBlack justify-center">
-        <p className="text-xs/[18px] text-slate-200">
-          Acompanhe as melhores promoções disponíveis aqui na Maeztra.
-        </p>
-      </div>
       <div className="shadow-header">
         <div className="max-w-[1598px] mx-auto flex items-center justify-between py-5">
           <img src={Logo} alt="Maeztra" />
@@ -55,7 +50,7 @@ export default function Header() {
       </div>
       <div>
         <nav className="">
-          <ul className="flex justify-between max-w-[1034px] w-full mx-auto my-[10px] text-sm/[21px] text-lightBlack">
+          <ul className="flex justify-between max-w-[1034px] w-full mx-auto my-[14px] text-sm/[21px] text-lightBlack">
             <li className="group">
               <a href="#" className="flex gap-2">
                 <img src={DressIcon} alt="Novidades" />

@@ -12,6 +12,9 @@ export default {
         lightBlack: "#353535",
         yellow: "#faa500",
         grey: "#efefef",
+        darkerGrey: "#464B54",
+        mediumGrey: "#787D83",
+        borderGrey: "#C4C4C4",
       },
       boxShadow: {
         header: "0px 4px 6px rgba(0,0,0, 0.08)",

@@ -1,3 +1,4 @@
+import Modal from "./components/modal";
 import Header from "./components/header";
 import MainBanner from "./components/main-banner";
 import Offers from "./components/offers";
@@ -10,6 +11,7 @@ import Footer from "./components/footer";
 function App() {
   return (
     <>
+      <Modal />
       <Header />
       <MainBanner />
       <Offers />
