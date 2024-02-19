@@ -31,7 +31,7 @@ export default function Shelf() {
           return (
             <SwiperSlide key={index}>
               <img src={product.img} alt="Produto" />
-              <div className="px-[27px] pb-4">
+              <div className="px-[27px]">
                 <div className="flex gap-1.5 mt-1.5">
                   {product.colors.map((color, index) => {
                     return (

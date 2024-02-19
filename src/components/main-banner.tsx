@@ -9,7 +9,7 @@ import "swiper/css/navigation";
 // import required modules
 import { Navigation, Pagination } from "swiper/modules";
 
-export default function FullBanner() {
+export default function MainBanner() {
   return (
     <section>
       <Swiper
