@@ -1,0 +1,9 @@
+{
+  "brands": [
+    { "img": "./src/assets/brand-comma.png" },
+    { "img": "./src/assets/brand-melissa.png" },
+    { "img": "./src/assets/brand-forever-21.png" },
+    { "img": "./src/assets/brand-zara.png" },
+    { "img": "./src/assets/brand-ann-taylor.png" }
+  ]
+}

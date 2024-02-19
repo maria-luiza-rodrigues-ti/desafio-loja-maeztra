@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 // Slider style
+.swiper-wrapper {
+  justify-content: center;
+}
 
 .swiper-button-next,
 .swiper-button-prev {
