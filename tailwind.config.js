@@ -6,6 +6,7 @@ export default {
       fontFamily: {
         sans: ["Titillium Web", "sans-serif"],
         secondary: ["Montserrat", "sans-serif"],
+        tercenary: ["Open Sans", "sans-serif"],
       },
       colors: {
         lightBlack: "#353535",
