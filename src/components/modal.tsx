@@ -1,6 +1,10 @@
 import * as Dialog from "@radix-ui/react-dialog";
+import useNewsletter from "../hooks/useNewsletter";
 
 export default function Modal() {
+  const { email, isAnError, handleContentChange, handleSaveEmail } =
+    useNewsletter();
+
   return (
     <Dialog.Root>
       <Dialog.DialogTrigger asChild={true}>
@@ -31,14 +35,26 @@ export default function Modal() {
                 Receba em Primeira mão{" "}
                 <strong>desconto e ofertas exclusivas</strong>
               </h2>
-              <form className="flex flex-col gap-[12px] w-full">
+              <form className="flex flex-col w-full relative">
                 <input
                   type="text"
                   placeholder="Digite eu e-mail"
-                  className="border border-borderGrey rounded-[10px] py-[10px] px-[13px] placeholder:text-xs/[20px] placeholder:mediumGrey"
+                  className={`border border-borderGrey rounded-[10px] py-[10px] px-[13px] placeholder:text-xs/[20px] placeholder:mediumGrey ${
+                    isAnError ? "border border-red-600 " : "mb-[13px]"
+                  }`}
+                  value={email}
+                  onChange={handleContentChange}
                 />
+                <span
+                  className={` text-red-600 text-xs ${
+                    isAnError ? "block mb-[3px]" : "hidden"
+                  }`}
+                >
+                  Verifique se e-mail está correto
+                </span>
                 <button
                   type="button"
+                  onClick={handleSaveEmail}
                   className="bg-yellow text-white flex items-center justify-center gap-[1px] rounded-[10px] py-[10px]"
                 >
                   ENVIAR <img src="./src/assets/icon-send.svg" alt="Enviar" />
