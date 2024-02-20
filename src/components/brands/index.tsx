@@ -30,7 +30,6 @@ export default function Brands() {
           },
           1024: {
             slidesPerView: 5,
-            spaceBetween: 16,
           },
         }}
       >
