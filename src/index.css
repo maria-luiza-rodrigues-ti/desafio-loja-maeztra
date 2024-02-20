@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-// Slider style
 .swiper-wrapper {
   justify-content: center;
 }
