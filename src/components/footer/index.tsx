@@ -1,32 +1,16 @@
-import footer from "../data/footer.json";
+import useMobile from "../../hooks/useMobile";
+import footer from "../../data/footer.json";
+import FooterMenuDesktop from "./footerMenuDesktop";
+import FooterMenuMobile from "./footerMenuMobile";
 
 export default function Footer() {
-  const { menus, socialmedia, creditcards, links } = footer;
+  const mobile = useMobile();
+  const { socialmedia, creditcards, links } = footer;
 
   return (
     <footer>
-      <section className="flex justify-between flex-wrap mx-auto max-w-[937px] mb-16">
-        {menus.map((menu, index) => {
-          return (
-            <div key={index}>
-              <h3 className="text-lightBlack font-bold mb-6">{menu.title}</h3>
-              <ul className="flex flex-col gap-6">
-                {menu.children.map((child, index) => {
-                  return (
-                    <li key={index}>
-                      <a
-                        href={child.href}
-                        className="text-xs/[18px] text-black"
-                      >
-                        {child.name}
-                      </a>
-                    </li>
-                  );
-                })}
-              </ul>
-            </div>
-          );
-        })}
+      <section className="flex justify-between flex-wrap pt-10 px-[30px] pb-14 md:p-0 mx-auto md:mb-16 max-w-[937px]">
+        {!mobile ? <FooterMenuDesktop /> : <FooterMenuMobile />}
       </section>
 
       <section className="bg-lightBlack pt-6 pb-8 md:py-5">

@@ -1,5 +1,5 @@
 import Modal from "./components/modal";
-import Header from "./components/Header/header";
+import Header from "./components/header/header";
 import MainBanner from "./components/main-banner";
 import Offers from "./components/offers";
 import Brands from "./components/brands";

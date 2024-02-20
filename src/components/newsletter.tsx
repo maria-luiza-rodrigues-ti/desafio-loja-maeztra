@@ -5,7 +5,7 @@ export default function Newsletter() {
     useNewsletter();
 
   return (
-    <section className="py-[40px] border-grey border-y-2  mb-[80px] ">
+    <section className="py-[40px] border-grey border-y-2 md:mb-[80px] ">
       <div className="flex justify-between items-center mx-auto max-w-[937px]">
         <h2 className="text-black text-2xl font-bold">
           Recebe Nossa Newsletter
