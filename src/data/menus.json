@@ -1,0 +1,28 @@
+{
+  "menus": [
+    { "title": "Novidades", "href": "", "icon": "./src/assets/icon-dress.svg" },
+    { "title": "Vestido", "href": "", "icon": null },
+    { "title": "Roupas", "href": "", "icon": null },
+    { "title": "Sapatos", "href": "", "icon": null },
+    { "title": "Lingerie", "href": "", "icon": null },
+    { "title": "Acessórios", "href": "", "icon": null },
+    { "title": "Outlet", "href": "", "icon": null }
+  ],
+  "account": [
+    {
+      "title": "Minha Conta",
+      "href": "",
+      "icon": "./src/assets/icon-user.svg"
+    },
+    {
+      "title": "Meus Favoritos",
+      "href": "",
+      "icon": "./src/assets/icon-heart.svg"
+    },
+    {
+      "title": "Meu Carrinho",
+      "href": "",
+      "icon": "./src/assets/icon-shoppingbag.svg"
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 import useMobile from "../../hooks/useMobile";
 import footer from "../../data/footer.json";
-import FooterMenuDesktop from "./footerMenuDesktop";
-import FooterMenuMobile from "./footerMenuMobile";
+import FooterMenuDesktop from "./footer-menu-desktop";
+import FooterMenuMobile from "./footer-menu-mobile";
 
 export default function Footer() {
   const mobile = useMobile();

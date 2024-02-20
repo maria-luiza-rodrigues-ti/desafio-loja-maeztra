@@ -34,7 +34,7 @@ export default function Modal() {
                 alt="E-mail"
                 className="mb-[13px]"
               />
-              <span className="mb-[13px] text-xs/[20px] text-darkerGrey">
+              <span className="mb-[13px] text-xs/[20px] text-darkGrey">
                 BEM VINDO À MAEZTRA
               </span>
               <h2 className="text-mediumGrey text-base/[23px] md:text-xl/[23px] max-w-[260px] text-center mb-[26px]">

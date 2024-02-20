@@ -12,7 +12,7 @@ export default {
         lightBlack: "#353535",
         yellow: "#faa500",
         grey: "#efefef",
-        darkerGrey: "#464B54",
+        darkGrey: "#464B54",
         mediumGrey: "#787D83",
         borderGrey: "#C4C4C4",
       },

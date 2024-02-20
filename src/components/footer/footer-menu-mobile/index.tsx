@@ -1,6 +1,6 @@
 import footer from "../../../data/footer.json";
 import * as Accordion from "@radix-ui/react-accordion";
-import FooterMenuItem from "../footerMenuItem";
+import FooterMenuItem from "../footer-menu-item";
 import { FooterMenu } from "../../../types";
 
 export default function FooterMenuMobile() {
