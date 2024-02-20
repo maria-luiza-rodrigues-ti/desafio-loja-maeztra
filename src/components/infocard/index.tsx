@@ -4,7 +4,7 @@ export default function Infocard() {
   const mobile = useMobile();
 
   return (
-    <section className="flex justify-center items-center flex-wrap md:gap-16 max-w-[1600px] w-full px-[30px] md:px-0 pt-[23px] pb-[39px] md:mx-auto md:my-[80px]">
+    <section className="flex justify-center items-center flex-wrap md:flex-nowrap md:gap-16 max-w-[1600px] w-full px-[30px] md:px-0 pt-[23px] pb-[39px] md:mx-auto md:my-[80px]">
       <div>
         <h3 className="text-black text-2xl font-bold mb-4">Lorem ipsum </h3>
         <p className="text-black text-sm mb-6 md:mb-0">
