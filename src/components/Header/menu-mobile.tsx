@@ -18,7 +18,7 @@ export default function MenuMobile() {
             </DropdownMenu.Trigger>
 
             <DropdownMenu.Portal>
-              <DropdownMenu.Content className="z-50 w-full">
+              <DropdownMenu.Content className="z-50 flex flex-col w-screen will-change-[opacity,transform] data-[side=top]:animate-slideDownAndFade data-[side=right]:animate-slideLeftAndFade data-[side=bottom]:animate-slideUpAndFade data-[side=left]:animate-slideRightAndFade">
                 <DropdownMenu.Item>
                   <a href="#">Novidades</a>
                 </DropdownMenu.Item>
@@ -48,17 +48,11 @@ export default function MenuMobile() {
           <img src={Logo} alt="Maeztra" />
         </div>
         <nav className="flex gap-[40px]">
-          <a
-            className="flex gap-2 items-center text-sm/[21px] text-lightBlack"
-            href="#"
-          >
-            <img src={SearchIcon} className="max-h-4" />
+          <a className="flex gap-2 items-center" href="#">
+            <img src={SearchIcon} />
           </a>
-          <a
-            className="flex items-center gap-2 text-sm/[21px] text-lightBlack "
-            href="#"
-          >
-            <img src={CartIcon} className="max-h-4" />
+          <a className="flex items-center gap-2 " href="#">
+            <img src={CartIcon} />
           </a>
         </nav>
       </div>
