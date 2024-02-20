@@ -28,21 +28,21 @@ export default function MenuDesktop() {
               className="flex gap-2 items-center text-sm/[21px] text-lightBlack"
               href="#"
             >
-              <img src={UserIcon} className="max-h-4" />{" "}
+              <img src={UserIcon} className="max-h-4" />
               <span>Minha Conta</span>
             </a>
             <a
               className="flex gap-2 ml-10 items-center text-sm/[21px] text-lightBlack"
               href="#"
             >
-              <img src={WishlistIcon} className="max-h-4" />{" "}
+              <img src={WishlistIcon} className="max-h-4" />
               <span>Favoritos</span>
             </a>
             <a
               className="flex items-center gap-2 ml-12 text-sm/[21px] text-lightBlack border border-yellow rounded-lg pt-3 pr-[14px] pb-[13px] pl-[17px]"
               href="#"
             >
-              <img src={CartIcon} className="max-h-4" />{" "}
+              <img src={CartIcon} className="max-h-4" />
               <span>Meu Carrinho</span>
             </a>
           </nav>
