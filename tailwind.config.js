@@ -19,20 +19,6 @@ export default {
       boxShadow: {
         header: "0px 4px 6px rgba(0,0,0, 0.08)",
       },
-      keyframes: {
-        slideDown: {
-          from: { height: "0px" },
-          to: { height: "var(--radix-accordion-content-height)" },
-        },
-        slideUp: {
-          from: { height: "var(--radix-accordion-content-height)" },
-          to: { height: "0px" },
-        },
-      },
-      animation: {
-        slideDown: "slideDown 300ms ease-out",
-        slideUp: "slideUp 300ms ease-out",
-      },
     },
   },
   plugins: [],

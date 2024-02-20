@@ -11,3 +11,7 @@ export interface Menu {
 export interface FooterMenu {
   menus: Menu[];
 }
+
+export interface Colors {
+  colors: string[];
+}

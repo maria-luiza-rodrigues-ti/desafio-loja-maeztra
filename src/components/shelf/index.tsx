@@ -1,4 +1,4 @@
-import items from "../data/products.json";
+import items from "../../data/products.json";
 import { toast } from "sonner";
 
 // Import Swiper React components
@@ -10,36 +10,71 @@ import "swiper/css/navigation";
 
 // import required modules
 import { Navigation } from "swiper/modules";
+import { useState } from "react";
+
+interface Product {
+  img: string;
+  colors: string[];
+  price: string;
+  title: string;
+  description: string;
+}
 
 export default function Shelf() {
   const { products } = items;
+  const [selectedButtonIndex, setSelectedButtonIndex] = useState<number | null>(
+    null
+  );
+
+  function handleSelectButton(index: number) {
+    setSelectedButtonIndex(index);
+  }
 
   return (
     <section>
-      <h2 className="text-center mb-6 font-bold text-[32px] text-lightBlack">
+      <h2 className="text-center mb-4 md:mb-6 font-bold text-2xl md:text-[32px] text-lightBlack">
         As Mais Pedidas
       </h2>
       <Swiper
-        slidesPerView={5}
-        spaceBetween={16}
         loop={true}
-        navigation={true}
+        breakpoints={{
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 16,
+            centeredSlides: true,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 16,
+            centeredSlides: true,
+          },
+          1024: {
+            slidesPerView: 5,
+            spaceBetween: 16,
+            navigation: true,
+          },
+        }}
         modules={[Navigation]}
-        className="max-w-[1600px] flex gap-4 group"
+        className="max-w-[1600px] px-4 md:px-0 flex md:gap-4 group "
       >
-        {products.map((product, index) => {
+        {products.map((product: Product, index: number) => {
           return (
             <SwiperSlide key={index}>
               <img src={product.img} alt="Produto" />
               <div className="px-[27px]">
                 <div className="flex gap-1.5 mt-1.5">
-                  {product.colors.map((color, index) => {
+                  {product.colors.map((color, colorIndex) => {
                     return (
-                      <div
-                        className="w-[27px] h-[27px] rounded"
+                      <button
+                        className={`w-[27px] h-[27px] rounded ${
+                          selectedButtonIndex === colorIndex
+                            ? "border-2 border-lightBlack"
+                            : ""
+                        }`}
                         style={{ backgroundColor: color }}
-                        key={index}
-                      ></div>
+                        key={colorIndex}
+                        onClick={() => handleSelectButton(colorIndex)}
+                      ></button>
                     );
                   })}
                 </div>
