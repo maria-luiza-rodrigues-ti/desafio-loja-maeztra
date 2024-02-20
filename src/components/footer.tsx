@@ -5,7 +5,7 @@ export default function Footer() {
 
   return (
     <footer>
-      <section className="flex justify-between mx-auto max-w-[937px] mb-16">
+      <section className="flex justify-between flex-wrap mx-auto max-w-[937px] mb-16">
         {menus.map((menu, index) => {
           return (
             <div key={index}>
@@ -29,9 +29,9 @@ export default function Footer() {
         })}
       </section>
 
-      <section className="bg-lightBlack py-5">
-        <div className="flex justify-between max-w-[1600px] mx-auto">
-          <ul className="flex items-center gap-[22px]">
+      <section className="bg-lightBlack pt-6 pb-8 md:py-5">
+        <div className="flex justify-center md:justify-between flex-wrap gap-8 md:gap-0 max-w-[1600px] mx-auto">
+          <ul className="flex items-center gap-6 md:gap-[22px]">
             {socialmedia.map((link, index) => {
               return (
                 <li key={index}>
@@ -42,7 +42,7 @@ export default function Footer() {
               );
             })}
           </ul>
-          <ul className="flex items-center gap-[22px]">
+          <ul className="flex items-center gap-6 md:gap-[22px]">
             {creditcards.map((card, index) => {
               return (
                 <li key={index}>
