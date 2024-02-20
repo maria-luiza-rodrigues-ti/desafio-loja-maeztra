@@ -25,7 +25,7 @@ export default function Newsletter() {
           <button
             type="button"
             onClick={handleSaveEmail}
-            className="bg-yellow w-[79px] md:w-[131px] h-[26px] md:h-10 rounded text-sm/[21px] text-white md:absolute md:z-10 md:right-[-1px] md:top-[-1px]"
+            className="bg-yellow w-[79px] md:w-[131px] h-[26px] md:h-10 rounded text-sm/[21px] text-white md:absolute md:z-10 md:right-[-1px] md:top-[-1px] focus-visible:outline-none"
           >
             Enviar
           </button>

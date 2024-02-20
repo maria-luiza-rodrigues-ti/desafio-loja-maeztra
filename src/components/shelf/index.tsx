@@ -66,7 +66,7 @@ export default function Shelf() {
                   {product.colors.map((color, colorIndex) => {
                     return (
                       <button
-                        className={`w-[27px] h-[27px] rounded ${
+                        className={`w-[27px] h-[27px] rounded focus-visible:outline-none ${
                           selectedButtonIndex === colorIndex
                             ? "border-2 border-lightBlack"
                             : ""
@@ -90,7 +90,7 @@ export default function Shelf() {
                   onClick={() =>
                     toast.success("Produto adicionado ao carrinho")
                   }
-                  className="bg-yellow w-full max-w-[254px] h-[35px] text-white text-center rounded"
+                  className="bg-yellow w-full max-w-[254px] h-[35px] text-white text-center rounded focus-visible:outline-none"
                 >
                   Adicionar
                 </button>

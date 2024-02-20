@@ -12,7 +12,7 @@ export default function MenuMobile() {
         <div className="flex gap-[19px]">
           <DropdownMenu.Root>
             <DropdownMenu.Trigger asChild>
-              <button>
+              <button className="focus-visible:outline-none">
                 <img src={Menu} alt="Menu" />
               </button>
             </DropdownMenu.Trigger>

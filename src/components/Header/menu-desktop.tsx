@@ -17,7 +17,7 @@ export default function MenuDesktop() {
               placeholder="O que você busca ?"
             />
             <button
-              className="bg-yellow w-[119px] rounded-[10px] text-sm/[21px] text-white"
+              className="bg-yellow w-[119px] rounded-[10px] text-sm/[21px] text-white focus-visible:outline-none"
               type="button"
             >
               Buscar

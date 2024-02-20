@@ -1,12 +1,14 @@
 import * as Dialog from "@radix-ui/react-dialog";
-import useNewsletter from "../hooks/useNewsletter";
+import useNewsletter from "../../hooks/useNewsletter";
 
 export default function Modal() {
   const { email, isAnError, handleContentChange, handleSaveEmail } =
     useNewsletter();
 
+  setTimeout(() => {}, 1000);
+
   return (
-    <Dialog.Root>
+    <Dialog.Root defaultOpen>
       <Dialog.DialogTrigger asChild={true}>
         <div className="flex bg-lightBlack justify-center">
           <p className="text-xs/[18px] text-slate-200">
@@ -16,13 +18,17 @@ export default function Modal() {
       </Dialog.DialogTrigger>
       <Dialog.DialogPortal>
         <Dialog.Overlay className="inset-0 fixed z-20 bg-black/70"></Dialog.Overlay>
-        <Dialog.Content className="fixed overflow-hidden z-30 inset-0 md:inset-auto md:left-1/2 md:top-1/2 md:-translate-x-1/2 md:-translate-y-1/2 w-full max-w-[848px] flex flex-col outline-none">
-          <Dialog.Close className="ml-auto text-slate-300 hover:text-white mb-[6px]">
+        <Dialog.Content className="fixed overflow-hidden z-30  inset-auto left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-[848px] flex flex-col">
+          <Dialog.Close className="mr-[31px] md:mr-0 ml-auto  text-right text-slate-300 hover:text-white md:mb-[6px] focus-visible:outline-none">
             FECHAR
           </Dialog.Close>
-          <div className="flex w-full">
-            <img src="./src/assets/modal.png" alt="Fundo Modal" />
-            <div className="bg-white w-full flex flex-col items-center pt-[122px] px-[51px]">
+          <div className="flex w-full justify-center">
+            <img
+              src="./src/assets/modal.png"
+              alt="Fundo Modal"
+              className="hidden md:block"
+            />
+            <div className="bg-white w-[calc(100%-62px)] md:w-full flex flex-col items-center pt-10 px-5 pb-6 md:pt-[122px] md:px-[51px]">
               <img
                 src="./src/assets/icon-email.svg"
                 alt="E-mail"
@@ -31,15 +37,15 @@ export default function Modal() {
               <span className="mb-[13px] text-xs/[20px] text-darkerGrey">
                 BEM VINDO À MAEZTRA
               </span>
-              <h2 className="text-mediumGrey text-xl/[23px] max-w-[260px] text-center mb-[26px]">
+              <h2 className="text-mediumGrey text-base/[23px] md:text-xl/[23px] max-w-[260px] text-center mb-[26px]">
                 Receba em Primeira mão{" "}
-                <strong>desconto e ofertas exclusivas</strong>
+                <strong className="block">desconto e ofertas exclusivas</strong>
               </h2>
               <form className="flex flex-col w-full relative">
                 <input
                   type="text"
                   placeholder="Digite eu e-mail"
-                  className={`border border-borderGrey rounded-[10px] py-[10px] px-[13px] placeholder:text-xs/[20px] placeholder:mediumGrey ${
+                  className={`border border-borderGrey rounded-[10px] py-[10px] px-[13px] h-10 placeholder:text-xs/[20px] placeholder:mediumGrey ${
                     isAnError ? "border border-red-600 " : "mb-[13px]"
                   }`}
                   value={email}
@@ -55,7 +61,7 @@ export default function Modal() {
                 <button
                   type="button"
                   onClick={handleSaveEmail}
-                  className="bg-yellow text-white flex items-center justify-center gap-[1px] rounded-[10px] py-[10px]"
+                  className="bg-yellow h-10 text-xs/[20px] md:text-base text-white flex items-center justify-center gap-1 md:gap-[1px] rounded-[10px] py-[10px] focus-visible:outline-none"
                 >
                   ENVIAR <img src="./src/assets/icon-send.svg" alt="Enviar" />
                 </button>
