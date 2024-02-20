@@ -1,13 +1,13 @@
-import Logo from "../../src/assets/logo-maeztra.svg";
-import UserIcon from "../assets/icon-user.svg";
-import WishlistIcon from "../assets/icon-heart.svg";
-import CartIcon from "../assets/icon-shoppingbag.svg";
-import DressIcon from "../assets/icon-dress.svg";
+import Logo from "../../assets/logo-maeztra.svg";
+import UserIcon from "../../assets/icon-user.svg";
+import WishlistIcon from "../../assets/icon-heart.svg";
+import CartIcon from "../../assets/icon-shoppingbag.svg";
+import DressIcon from "../../assets/icon-dress.svg";
 
-export default function Header() {
+export default function MenuDesktop() {
   return (
     <header>
-      <div className="shadow-header">
+      <div>
         <div className="max-w-[1598px] mx-auto flex items-center justify-between py-5">
           <img src={Logo} alt="Maeztra" />
           <div className="flex justify-between bg-grey w-full min-w-[500px] max-w-[791px] h-10 pl-6 rounded-[10px] overflow: hidden;">
