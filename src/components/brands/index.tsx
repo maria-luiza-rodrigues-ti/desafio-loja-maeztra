@@ -1,9 +1,7 @@
 import items from "../../data/brands.json";
 
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
-// Import Swiper styles
 import "swiper/css";
 
 export default function Brands() {

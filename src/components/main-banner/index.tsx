@@ -1,14 +1,11 @@
 import items from "../../data/banners.json";
 
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-// import required modules
 import { Navigation, Pagination } from "swiper/modules";
 import useMobile from "../../hooks/useMobile";
 
