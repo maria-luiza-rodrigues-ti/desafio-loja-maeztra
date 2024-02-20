@@ -1,4 +1,4 @@
-import items from "../data/offers.json";
+import items from "../../data/offers.json";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -10,14 +10,28 @@ export default function Offers() {
   const { offers } = items;
 
   return (
-    <section className="flex flex-col items-center mt-6 mb-[74px]">
+    <section className="flex flex-col items-center mt-6 mb-10 md:mb-[74px]">
       <h4 className="text-base text-lightBlack font-bold">
         Por que comprar na Maeztra?
       </h4>
       <Swiper
-        slidesPerView={5}
-        spaceBetween={15}
-        className="flex justify-between max-w-[1600px] w-full gap-[15px] mt-[21px]"
+        spaceBetween={16}
+        breakpoints={{
+          640: {
+            slidesPerView: 1,
+            centeredSlides: true,
+            loop: true,
+          },
+          768: {
+            slidesPerView: 3,
+            centeredSlides: true,
+            loop: true,
+          },
+          1024: {
+            slidesPerView: 5,
+          },
+        }}
+        className="flex justify-between max-w-[1600px] w-full gap-[15px] mt-[21px] px-[31px]"
       >
         {offers.map((offer, index) => (
           <SwiperSlide
@@ -29,7 +43,9 @@ export default function Offers() {
               <h5 className="text-lightBlack font-bold text-sm">
                 {offer.title}
               </h5>
-              <p className="text-black text-xs">{offer.description}</p>
+              <p className="text-black text-xs whitespace-pre">
+                {offer.description}
+              </p>
             </div>
           </SwiperSlide>
         ))}
