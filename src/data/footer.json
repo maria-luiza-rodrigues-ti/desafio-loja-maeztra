@@ -54,51 +54,51 @@
   ],
   "socialmedia": [
     {
-      "img": "/assets/facebook.svg",
+      "img": "src/assets/facebook.svg",
       "alt": "Facebook"
     },
     {
-      "img": "/assets/linkedin.svg",
+      "img": "src/assets/linkedin.svg",
       "alt": "Linkedin"
     },
     {
-      "img": "/assets/instagram.svg",
+      "img": "src/assets/instagram.svg",
       "alt": "Instagram"
     },
     {
-      "img": "/assets/youtube.svg",
+      "img": "src/assets/youtube.svg",
       "alt": "Youtube"
     }
   ],
   "creditcards": [
     {
       "alt": "Visa",
-      "img": "/assets/visa.svg"
+      "img": "src/assets/visa.svg"
     },
     {
       "alt": "Mastercard",
-      "img": "/assets/mastercard.svg"
+      "img": "src/assets/mastercard.svg"
     },
     {
       "alt": "Visa",
-      "img": "/assets/visa.svg"
+      "img": "src/assets/visa.svg"
     },
     {
       "alt": "Mastercard",
-      "img": "/assets/mastercard.svg"
+      "img": "src/assets/mastercard.svg"
     }
   ],
   "links": [
     {
       "url": "https://vtex.com/br-pt/",
       "title": "Powered by",
-      "img": "/assets/vtex.svg",
+      "img": "src/assets/vtex.svg",
       "alt": "Vtex"
     },
     {
       "url": "https://maeztra.com",
       "title": "Developed by",
-      "img": "/assets/maeztra.svg",
+      "img": "src/assets/maeztra.svg",
       "alt": "Maeztra"
     }
   ]

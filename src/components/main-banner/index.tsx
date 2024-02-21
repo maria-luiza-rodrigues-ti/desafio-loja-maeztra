@@ -15,8 +15,10 @@ export default function MainBanner() {
 
   return (
     <section>
+      <img src="" alt="" />
       <Swiper
         slidesPerView={1}
+        loop
         pagination={{
           clickable: true,
         }}

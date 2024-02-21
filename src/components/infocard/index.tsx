@@ -20,10 +20,10 @@ export default function Infocard() {
         </p>
       </div>
       {!mobile ? (
-        <img src="/assets/banner-2.png" alt="Banner" className="rounded" />
+        <img src="src/assets/banner-2.png" alt="Banner" className="rounded" />
       ) : (
         <img
-          src="/assets/banner-2-mobile.png"
+          src="src/assets/banner-2-mobile.png"
           alt="Banner"
           className="rounded"
         />

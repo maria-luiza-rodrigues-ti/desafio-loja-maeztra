@@ -2,10 +2,10 @@ import * as DropdownMenu from "@radix-ui/react-dropdown-menu";
 
 import items from "../../../data/menus.json";
 
-import Menu from "/assets/icon-menu.svg";
-import Logo from "/assets/logo-maeztra-mobile.svg";
-import SearchIcon from "/assets/icon-search.svg";
-import CartIcon from "/assets/icon-shoppingbag-mobile.svg";
+import Menu from "../../../assets/icon-menu.svg";
+import Logo from "../../../assets/logo-maeztra-mobile.svg";
+import SearchIcon from "../../../assets/icon-search.svg";
+import CartIcon from "../../../assets/icon-shoppingbag-mobile.svg";
 
 export default function MenuMobile() {
   const { menus, account } = items;

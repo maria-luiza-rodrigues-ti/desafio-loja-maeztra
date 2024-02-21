@@ -1,6 +1,10 @@
 {
   "menus": [
-    { "title": "Novidades", "href": "", "icon": "/assets/icon-dress.svg" },
+    {
+      "title": "Novidades",
+      "href": "",
+      "icon": "src/assets/icon-dress.svg"
+    },
     { "title": "Vestido", "href": "", "icon": null },
     { "title": "Roupas", "href": "", "icon": null },
     { "title": "Sapatos", "href": "", "icon": null },
@@ -12,17 +16,17 @@
     {
       "title": "Minha Conta",
       "href": "",
-      "icon": "/assets/icon-user.svg"
+      "icon": "src/assets/icon-user.svg"
     },
     {
       "title": "Meus Favoritos",
       "href": "",
-      "icon": "/assets/icon-heart.svg"
+      "icon": "src/assets/icon-heart.svg"
     },
     {
       "title": "Meu Carrinho",
       "href": "",
-      "icon": "/assets/icon-shoppingbag.svg"
+      "icon": "src/assets/icon-shoppingbag.svg"
     }
   ]
 }

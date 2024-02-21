@@ -3,38 +3,38 @@
     {
       "title": " Promoções de Outono",
       "description": "Confiras os melhores looks para combinar com você nesse Outono",
-      "img": "url('/assets/full-banner.png')",
-      "imgMobile": "url('/assets/full-banner-mobile.png')"
+      "img": "url('src/assets/full-banner.png')",
+      "imgMobile": "url('src/assets/full-banner-mobile.png')"
     },
     {
       "title": " Promoções de Outono",
       "description": "Confiras os melhores looks para combinar com você nesse Outono",
-      "img": "url('/assets/full-banner.png')",
-      "imgMobile": "url('/assets/full-banner-mobile.png')"
+      "img": "url('src/assets/full-banner.png')",
+      "imgMobile": "url('src/assets/full-banner-mobile.png')"
     },
     {
       "title": " Promoções de Outono",
       "description": "Confiras os melhores looks para combinar com você nesse Outono",
-      "img": "url('/assets/full-banner.png')",
-      "imgMobile": "url('/assets/full-banner-mobile.png')"
+      "img": "url('src/assets/full-banner.png')",
+      "imgMobile": "url('src/assets/full-banner-mobile.png')"
     },
     {
       "title": " Promoções de Outono",
       "description": "Confiras os melhores looks para combinar com você nesse Outono",
-      "img": "url('/assets/full-banner.png')",
-      "imgMobile": "url('/assets/full-banner-mobile.png')"
+      "img": "url('src/assets/full-banner.png')",
+      "imgMobile": "url('src/assets/full-banner-mobile.png')"
     },
     {
       "title": " Promoções de Outono",
       "description": "Confiras os melhores looks para combinar com você nesse Outono",
-      "img": "url('/assets/full-banner.png')",
-      "imgMobile": "url('/assets/full-banner-mobile.png')"
+      "img": "url('src/assets/full-banner.png')",
+      "imgMobile": "url('src/assets/full-banner-mobile.png')"
     },
     {
       "title": " Promoções de Outono",
       "description": "Confiras os melhores looks para combinar com você nesse Outono",
-      "img": "url('/assets/full-banner.png')",
-      "imgMobile": "url('/assets/full-banner-mobile.png')"
+      "img": "url('src/assets/full-banner.png')",
+      "imgMobile": "url('src/assets/full-banner-mobile.png')"
     }
   ]
 }
