@@ -21,7 +21,6 @@ export default function MainBanner() {
           clickable: true,
         }}
         navigation={true}
-        loop={true}
         modules={[Navigation, Pagination]}
       >
         {banners &&
