@@ -27,14 +27,14 @@
 
 .swiper-button-next::after {
   content: "";
-  background: url("./src/assets/icon-next.svg") no-repeat;
+  background: url("/assets/icon-next.svg") no-repeat;
   width: 19.42px;
   height: 32px;
 }
 
 .swiper-button-prev::after {
   content: "";
-  background: url("./src/assets/icon-prev.svg") no-repeat;
+  background: url("/assets/icon-prev.svg") no-repeat;
   width: 19.42px;
   height: 32px;
 }

@@ -24,13 +24,13 @@ export default function Modal() {
           </Dialog.Close>
           <div className="flex w-full justify-center">
             <img
-              src="./src/assets/modal.png"
+              src="/assets/modal.png"
               alt="Fundo Modal"
               className="hidden md:block"
             />
             <div className="bg-white w-[calc(100%-62px)] md:w-full flex flex-col items-center pt-10 px-5 pb-6 md:pt-[122px] md:px-[51px]">
               <img
-                src="./src/assets/icon-email.svg"
+                src="/assets/icon-email.svg"
                 alt="E-mail"
                 className="mb-[13px]"
               />
@@ -63,7 +63,7 @@ export default function Modal() {
                   onClick={handleSaveEmail}
                   className="bg-yellow h-10 text-xs/[20px] md:text-base text-white flex items-center justify-center gap-1 md:gap-[1px] rounded-[10px] py-[10px] focus-visible:outline-none"
                 >
-                  ENVIAR <img src="./src/assets/icon-send.svg" alt="Enviar" />
+                  ENVIAR <img src="/assets/icon-send.svg" alt="Enviar" />
                 </button>
               </form>
             </div>

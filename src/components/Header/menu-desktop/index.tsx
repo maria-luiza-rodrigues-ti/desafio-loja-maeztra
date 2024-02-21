@@ -1,9 +1,9 @@
 import items from "../../../data/menus.json";
 
-import Logo from "../../../assets/logo-maeztra.svg";
-import UserIcon from "../../../assets/icon-user.svg";
-import WishlistIcon from "../../../assets/icon-heart.svg";
-import CartIcon from "../../../assets/icon-shoppingbag.svg";
+import Logo from "../../../../public/assets/logo-maeztra.svg";
+import UserIcon from "../../../../public/assets/icon-user.svg";
+import WishlistIcon from "../../../../public/assets/icon-heart.svg";
+import CartIcon from "../../../../public/assets/icon-shoppingbag.svg";
 
 export default function MenuDesktop() {
   const { menus } = items;
