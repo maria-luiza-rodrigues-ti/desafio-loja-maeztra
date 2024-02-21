@@ -13,8 +13,6 @@ export default function MainBanner() {
   const { banners } = items;
   const mobile = useMobile();
 
-  console.log(mobile);
-
   return (
     <section>
       <Swiper
